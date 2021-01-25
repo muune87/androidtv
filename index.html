@@ -24,6 +24,11 @@
     <input type="text" value="Say hello9"/>
     <input type="text" value="Say hello11"/>
     <script type="text/javascript">
+     var AndroidKeyHandler = {
+         handleNativeKeyPress: function(code){
+             alert(code);
+         }
+     }
      var WebYJ = {
           getUniqueKey: function(code){
               alert(code);
