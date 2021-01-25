@@ -26,16 +26,16 @@
     <script type="text/javascript">
      var AndroidKeyHandler = {
          handleNativeKeyPress: function(code){
-             alert(code);
+             window.YJ.showToast(code);
          }
      }
      var WebYJ = {
           getUniqueKey: function(code){
-              alert(code);
+              window.YJ.showToast(code);
           }
       }
      
-     window.addEventListener("keydown", (e) => e && e.key && alert(e.key));
+     window.addEventListener("keydown", (e) => e && e.key && window.YJ.showToast(e.key));
 
     </script>
 </body>
