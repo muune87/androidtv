@@ -14,7 +14,7 @@
 </head>
 <body>
     <input type="button" value="clearCache" onClick="window.YJ.clearCache()" autofocus="true"/>
-    <input type="button" value="getUniqueKey" onClick="window.YJ.getUniqueKey()" />
+    <input type="button" value="getUniqueKey" onClick="alert(window.YJ.getUniqueKey())" />
     <input type="button" value="finish" onClick="window.YJ.finish()" />
     <input type="button" value="Say hello4" onClick="alert('Hello Android444!')" />
     <input type="button" value="Say hello5" onClick="alert('Hello Android555!')" />
@@ -24,17 +24,7 @@
     <input type="text" value="Say hello9"/>
     <input type="text" value="Say hello11"/>
     <script type="text/javascript">
-     var AndroidKeyHandler = {
-         handleNativeKeyPress: function(code){
-             window.YJ.showToast(code);
-         }
-     }
-     var WebYJ = {
-          getUniqueKey: function(code){
-              window.YJ.showToast(code);
-          }
-      }
-     
+
      window.addEventListener("keydown", (e) => e && e.key && window.YJ.showToast(e.key));
 
     </script>
