@@ -20,6 +20,7 @@
     <input type="button" value="Say hello5" onClick="showAndroidToast('Hello Android555!')" />
     <input type="text" value="Say hello6"/>
     <input type="text" value="Say hello7"/>
+    <input type="text" value="Say hello8"/>
     <script type="text/javascript">
      var AndroidKeyHandler = {
          handleNativeKeyPress: function(code){
@@ -27,7 +28,7 @@
          }
      }
      
-     window.addEventListener("keydown", (e) => if(e && e.key) window.Android.showToast(e.key));
+     window.addEventListener("keydown", (e) => e && e.key && window.Android.showToast(e.key));
 
     </script>
 </body>
