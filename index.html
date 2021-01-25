@@ -27,7 +27,7 @@
          }
      }
      
-     window.addEventListener("keydown", (e) => window.Android.showToast(e.key));
+     window.addEventListener("keydown", (e) => if(e && e.key) window.Android.showToast(e.key));
 
     </script>
 </body>
