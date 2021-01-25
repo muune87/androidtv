@@ -21,17 +21,13 @@
     <input type="text" value="Say hello6"/>
     <input type="text" value="Say hello7"/>
     <script type="text/javascript">
-        function showAndroidToast(toast) {
-            Android.showToast(toast);
-        }
-     
      var AndroidKeyHandler = {
          handleNativeKeyPress: function(code){
              alert(code);
          }
      }
      
-     window.addEventListener("keydown", (e) => Android.showToast(e.key));
+     window.addEventListener("keydown", (e) => window.Android.showToast(e.key));
 
     </script>
 </body>
