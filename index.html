@@ -26,6 +26,12 @@
     <script type="text/javascript">
 
      window.addEventListener("keydown", (e) => e && e.key && window.YJ.showToast(e.key));
+     
+     window.addEventListener("mousedown", (e) => e && e.key && window.YJ.showToast('mousedown'+e.key));
+     window.addEventListener("mouseup", (e) => e && e.key && window.YJ.showToast('mouseup'+e.key));
+     window.addEventListener("click", (e) => e && e.key && window.YJ.showToast('click'+e.key));
+     window.addEventListener("touchstart", (e) => e && e.key && window.YJ.showToast('touchstart'+e.key));
+     window.addEventListener("touchend", (e) => e && e.key && window.YJ.showToast('touchend'+e.key));
 
     </script>
 </body>
