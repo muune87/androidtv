@@ -25,7 +25,7 @@
     <input type="text" value="Say hello9"/>
     <script type="text/javascript">
 
-     window.addEventListener("keydown", (e) => e && e.key && window.YJ.showLog(e.key));
+     window.addEventListener("keydown", (e) => e && e.key && window.YJ.showLog(e.key+":"+e.isLongPress));
      window.addEventListener("mousedown", (e) => window.YJ.showLog('mousedown'));
      window.addEventListener("mouseup", (e) => window.YJ.showLog('mouseup'));
      window.addEventListener("click", (e) => window.YJ.showLog('click'));
