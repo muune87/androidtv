@@ -18,20 +18,19 @@
     <input type="button" value="finish" onClick="window.YJ.finish()" />
     <input type="button" value="Say hello4" onClick="alert('Hello Android444!')" />
     <input type="button" value="Say hello5" onClick="alert('Hello Android555!')" />
+    <input type="button" value="Say hello6" onClick="alert('Hello Android666!')" />
     <input type="text" value="Say hello6"/>
     <input type="text" value="Say hello7"/>
     <input type="text" value="Say hello8"/>
     <input type="text" value="Say hello9"/>
-    <input type="text" value="Say hello11"/>
-    <input type="text" value="Say hello12"/>
     <script type="text/javascript">
 
      window.addEventListener("keydown", (e) => e && e.key && window.YJ.showLog(e.key));
-     window.addEventListener("mousedown", (e) => e && e.key && window.YJ.showLog('mousedown'+e.key));
-     window.addEventListener("mouseup", (e) => e && e.key && window.YJ.showLog('mouseup'+e.key));
-     window.addEventListener("click", (e) => e && e.key && window.YJ.showLog('click'+e.key));
-     window.addEventListener("touchstart", (e) => e && e.key && window.YJ.showLog('touchstart'+e.key));
-     window.addEventListener("touchend", (e) => e && e.key && window.YJ.showLog('touchend'+e.key));
+     window.addEventListener("mousedown", (e) => window.YJ.showLog('mousedown'));
+     window.addEventListener("mouseup", (e) => window.YJ.showLog('mouseup'));
+     window.addEventListener("click", (e) => window.YJ.showLog('click'));
+     window.addEventListener("touchstart", (e) => window.YJ.showLog('touchstart'));
+     window.addEventListener("touchend", (e) => window.YJ.showLog('touchend'));
 
     </script>
 </body>
