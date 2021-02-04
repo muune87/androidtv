@@ -34,11 +34,15 @@
      //window.addEventListener("touchstart", (e) => window.YJ.showLog('touchstart'));
      //window.addEventListener("touchend", (e) => window.YJ.showLog('touchend'));
      
+  
+     
      var WebYJ = {
       longPressKey: function(key){
        alert(key);
       }
      }
+     
+     window.YJ.setLongPressListener(WebYJ.longPressKey);
 
     </script>
 </body>
