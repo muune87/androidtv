@@ -42,13 +42,40 @@
        alert(key);
       }
      }
-     var openSideMenu = function(){
-      alert('openSideMenu');
+     var openSideMenuLeft = function(){
+      alert('openSideMenu:left');
+     }
+     var openSideMenuRight = function(){
+      alert('openSideMenu:right');
+     }
+     var openSideMenuUp = function(){
+      alert('openSideMenu:up');
+     }
+     var openSideMenuDown = function(){
+      alert('openSideMenu:down');
+     }
+     var openSideMenuCenter = function(){
+      alert('openSideMenu:center');
+     }
+     var openSideMenuBack = function(){
+      alert('openSideMenu:back');
      }
      
-     const openMenu = keyCode => keyCode == 21 && openSideMenu();
+     
+     const openMenuLeft = keyCode => keyCode == 21 && openSideMenuLeft();
+     const openMenuRight = keyCode => keyCode == 22 && openSideMenuRight();
+     const openMenuDown = keyCode => keyCode == 20 && openSideMenuDown();
+     const openMenuUp = keyCode => keyCode == 19 && openSideMenuUp();
+     const openMenuCenter = keyCode => keyCode == 23 && openSideMenuCenter();
+     const openMenuLeft = keyCode => keyCode == 4 && openSideMenuBack();
      //window.YJ.setLongPressListener('WebYJ.longPressKey');
-     window.YJ.setLongPressListener('openMenu');
+
+     window.YJ.setLongPressListener('openMenuLeft');
+     window.YJ.setLongPressListener('openMenuRight');
+     window.YJ.setLongPressListener('openMenuDown');
+     window.YJ.setLongPressListener('openMenuUp');
+     window.YJ.setLongPressListener('openMenuCenter');
+     window.YJ.setLongPressListener('openMenuLeft');
 
     </script>
 </body>
