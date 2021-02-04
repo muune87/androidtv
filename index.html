@@ -28,7 +28,7 @@
     <input type="text" value="Say hello9"/>
     <script type="text/javascript">
 
-     window.addEventListener("keydown", (e) => e && e.key && window.YJ.showToast(e.key+":"+e.isLongPress));
+     window.addEventListener("keydown", (e) => e && e.key && window.YJ.showToast(e.key));
      //window.addEventListener("mousedown", (e) => window.YJ.showLog('mousedown'));
      //window.addEventListener("mouseup", (e) => window.YJ.showLog('mouseup'));
      //window.addEventListener("click", (e) => window.YJ.showLog('click'));
@@ -37,11 +37,6 @@
      
   
      
-     var WebYJ = {
-      longPressKey: function(key){
-       alert(key);
-      }
-     }
      var openSideMenuLeft = function(){
       alert('openSideMenu:left');
      }
@@ -67,15 +62,25 @@
      const openMenuDown = keyCode => keyCode == 20 && openSideMenuDown();
      const openMenuUp = keyCode => keyCode == 19 && openSideMenuUp();
      const openMenuCenter = keyCode => keyCode == 23 && openSideMenuCenter();
-     const openMenuLeft = keyCode => keyCode == 4 && openSideMenuBack();
-     //window.YJ.setLongPressListener('WebYJ.longPressKey');
-
+     const openMenuBack = keyCode => keyCode == 4 && openSideMenuBack();
+  
      window.YJ.setLongPressListener('openMenuLeft');
-     window.YJ.setLongPressListener('openMenuRight');
-     window.YJ.setLongPressListener('openMenuDown');
-     window.YJ.setLongPressListener('openMenuUp');
-     window.YJ.setLongPressListener('openMenuCenter');
-     window.YJ.setLongPressListener('openMenuLeft');
+     //window.YJ.setLongPressListener('openMenuRight');
+     //window.YJ.setLongPressListener('openMenuDown');
+     //window.YJ.setLongPressListener('openMenuUp');
+     //window.YJ.setLongPressListener('openMenuCenter');
+     //window.YJ.setLongPressListener('openMenuBack');
+     
+     
+     
+        //window.YJ.setLongPressListener('WebYJ.longPressKey');
+/*
+     var WebYJ = {
+      longPressKey: function(key){
+       alert(key);
+      }
+     }
+     */
 
     </script>
 </body>
