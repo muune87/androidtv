@@ -41,8 +41,13 @@
        alert(key);
       }
      }
+     var openSideMenu = function(){
+      alert('openSideMenu');
+     }
      
-     window.YJ.setLongPressListener('WebYJ.longPressKey');
+     const openMenu = keyCode => keyCode == 21 && openSideMenu();
+     //window.YJ.setLongPressListener('WebYJ.longPressKey');
+     window.YJ.setLongPressListener('openMenu');
 
     </script>
 </body>
