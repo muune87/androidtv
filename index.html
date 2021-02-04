@@ -28,7 +28,7 @@
     <input type="text" value="Say hello9"/>
     <script type="text/javascript">
 
-     window.addEventListener("keydown", (e) => e && e.key && window.YJ.showToast(e.key));
+     window.addEventListener("keyup", (e) => e && e.key && window.YJ.showToast(e.key));
      //window.addEventListener("mousedown", (e) => window.YJ.showLog('mousedown'));
      //window.addEventListener("mouseup", (e) => window.YJ.showLog('mouseup'));
      //window.addEventListener("click", (e) => window.YJ.showLog('click'));
@@ -64,7 +64,7 @@
      const openMenuCenter = keyCode => keyCode == 23 && openSideMenuCenter();
      const openMenuBack = keyCode => keyCode == 4 && openSideMenuBack();
   
-     window.YJ.setLongPressListener('openMenuLeft');
+     window.YJ.setLongPressListener('openMenuBack');
      //window.YJ.setLongPressListener('openMenuRight');
      //window.YJ.setLongPressListener('openMenuDown');
      //window.YJ.setLongPressListener('openMenuUp');
